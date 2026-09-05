@@ -1,0 +1,2 @@
+-- Applied directly via Supabase SQL Editor; kept here for the record.
+-- See NEXORA_PRD.md Section 10 for the full schema rationale.
