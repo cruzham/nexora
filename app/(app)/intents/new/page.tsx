@@ -40,7 +40,7 @@ export default function NewIntentPage() {
       }
 
       const intent = await res.json();
-      router.push(`/dashboard?created=${intent.id}`);
+      router.push(`/intents/${intent.id}/review`);
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
