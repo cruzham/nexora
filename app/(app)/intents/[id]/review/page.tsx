@@ -200,15 +200,12 @@ export default function ReviewIntentPage() {
 
             {!p.needs_clarification && (
               <div className="space-y-2">
-                <p className="text-xs text-mist">
-                  Outcome Graph and Strategy generation come next (Steps 6-7 -- not built yet).
-                </p>
-                <button
-                  disabled
-                  className="w-full rounded-node bg-signal text-void font-medium px-4 py-3 opacity-40 cursor-not-allowed"
+                <Link
+                  href={`/intents/${intent.id}/graph`}
+                  className="block text-center w-full rounded-node bg-signal text-void font-medium px-4 py-3"
                 >
                   Continue to Outcome Graph
-                </button>
+                </Link>
               </div>
             )}
           </div>
